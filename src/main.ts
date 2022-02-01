@@ -37,12 +37,12 @@ onDraw(() => {
       bg = listRain[i].speed < 30 ? rgb(0, 100, 0) : GREEN;
 
       if (j == listRain[i].kata.length - 1) bg = WHITE;
-      else if (j == listRain[i].kata.length - 4) bg = rgb(128, 128, 128);
+      else if (j >= listRain[i].kata.length - 4) bg = rgb(128, 128, 128);
 
-      // let charIdx = j % listRain[i].kata.length;
+      let charIdx = j % listRain[i].kata.length;
 
       drawText({
-        text: listRain[i].kata[j],
+        text: listRain[i].kata[charIdx],
         pos: vec2(i * fontSize, j * fontSize + listRain[i].pos.y),
         size: fontSize,
         color: bg,
