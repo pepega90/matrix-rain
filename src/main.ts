@@ -18,7 +18,7 @@ class Rain {
 
 let bg = GREEN;
 let fontSize: number = 20;
-
+// comment dari main
 let listRain: Rain[] = [];
 for (let i: number = 0; i < width() / fontSize; i++) {
   let r: Rain = new Rain(
