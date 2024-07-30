@@ -51,7 +51,7 @@ onDraw(() => {
 
     if (listRain[i].pos.y > height()) {
       listRain[i].pos.y = -500;
-
+      // some commentss
       listRain[i].kata = "";
 
       for (let x = 0; x < 26; x++) {
