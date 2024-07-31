@@ -48,7 +48,7 @@ onDraw(() => {
         color: bg,
       });
     }
-
+    // comment dari test
     if (listRain[i].pos.y > height()) {
       listRain[i].pos.y = -500;
       // some commentss
